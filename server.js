@@ -2,8 +2,10 @@ var Hapi = require('hapi')
 var inert = require('inert')
 var fs = require('fs')
 var hecTiles = require('./lib/hec_tiles')
+var path = require('path')
 
-hecTiles.init(__dirname + '\\tilesets')
+var tilesDir = path.join(__dirname, 'tilesets')
+hecTiles.init(tilesDir)
 
 var server = new Hapi.Server();
 server.connection({ port: 3000 });
