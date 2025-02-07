@@ -1,4 +1,8 @@
-# machine: ubuntu2204
+
+# Usage documentation: https://www.hec.usace.army.mil/confluence/rasdocs/rmum/6.2/tile-map-server
+
+# Initialize server:
+### machine: ubuntu2204
 
 suppose you have correctly installed nvm.
 ```
