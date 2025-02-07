@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>RAS Tiles</title>
+      <link rel="icon" type="image/png" href="favicon.png" />
+      <link href="../bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href='../bootstrap/font-awesome-4.4.0/css/font-awesome.css' rel='stylesheet' />
+  		<link href='../leaflet/leaflet.css' rel='stylesheet' />
+      <link href='../leaflet/easy-button.css' rel='stylesheet' />
+      <link href='../jquery/jstree/themes/default/style.min.css' rel='stylesheet' />
+      <link href='../jquery/jquery-ui.custom/jquery-ui.min.css' rel='stylesheet' />
+  		<link href="../css/app.css" rel="stylesheet" />
+
+
+      <script type="text/javascript" src="../jquery/jquery.min.js"></script>
+      <script type="text/javascript" src="../jquery/jstree/jstree.min.js"></script>
+      <script type="text/javascript" src="../jquery/jquery-ui.custom/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="../bootstrap/bootstrap.min.js"></script>
+      <script src="../js/shp.js" type="text/javascript"></script>
+  		<script src='../js/my-ajax.js'></script>
+  		<script src='../leaflet/leaflet.js'></script>
+      <script src='../leaflet/easy-button.js'></script>
+      <script src="../js/spin.min.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <p><a href="../" ><i class="fa fa-backward"></i> RAS Tiles</a></p>
+        <div class="project-name"></div>
+      </div>
+      <div class="slider-container">
+        <p class="slider-label">Opacity</p>
+        <div class="opacity-slider" value=50></div>
+      </div>
+      <div class="table-of-contents"></div>
+    </div>
+
+    <div id="floating-toolbar" class="floating-toolbar">
+      <div class="btn-group anim-buttons hidden" role="group">
+        <button type="button" class="btn btn-primary btn-back"><i class="fa fa-step-backward"></i></button>
+        <button type="button" class="btn btn-primary btn-play"><i class="fa fa-play"></i></button>
+        <button type="button" class="btn btn-primary btn-stop hidden"><i class="fa fa-stop"></i></button>
+        <button type="button" class="btn btn-primary btn-forward"><i class="fa fa-step-forward"></i></button>
+      </div>
+      <div class="layer-name"></div>
+    </div>
+
+
+
+    <div id="map-legend" class="map-legend">
+      <ul id="legend-list" class="legend-list">
+      </ul>
+    </div>
+
+
+		<div id="map">
+
+		</div>
+
+		<script src='./map.js'></script>
+
+	</body>
+</html>
